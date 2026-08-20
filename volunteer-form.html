@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Volunteer with Hands & Canvas. No previous art or volunteer experience is required.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/hc-favicon-32.png"><link rel="apple-touch-icon" href="assets/hc-apple-touch.png"><title>Volunteer Form | Hands & Canvas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="volunteer-form.css">
+</head>
+<body>
+<div class="nav-wrap" id="siteNav">
+  <nav class="nav site-nav" aria-label="Primary navigation">
+    <a class="brand" href="index.html" aria-label="Hands & Canvas home"><img class="brand-logo" src="assets/hc-logo.png" alt=""><span>Hands &amp; Canvas</span></a>
+    <div class="nav-links">
+      <a href="about.html" class="nav-top-link ">About</a>
+      <div class="nav-item has-dropdown "><button class="nav-drop-toggle" type="button" aria-expanded="false">Impact <span>⌄</span></button><div class="dropdown-menu"><a href="impact.html"><strong>Impact Overview</strong><small>Numbers, photographs &amp; community network</small></a><a href="timeline.html"><strong>Our Timeline</strong><small>Follow the story as the paint flows</small></a></div></div>
+      <div class="nav-item has-dropdown "><button class="nav-drop-toggle" type="button" aria-expanded="false">Programs <span>⌄</span></button><div class="dropdown-menu"><a href="workshops.html"><strong>Workshops</strong><small>Free hands-on art programming</small></a><a href="beyond.html"><strong>Beyond the Studio</strong><small>Create and contribute from anywhere</small></a><a href="colouring-book.html"><strong>Colouring Book</strong><small>Our interactive creative resource</small></a></div></div>
+      <div class="nav-item has-dropdown active"><button class="nav-drop-toggle" type="button" aria-expanded="false">Get Involved <span>⌄</span></button><div class="dropdown-menu"><a href="volunteer.html"><strong>Volunteer</strong><small>Find your way to create with us</small></a><a href="partner.html"><strong>Partner</strong><small>Bring Hands &amp; Canvas to your community</small></a></div></div>
+      <a class="btn btn-pink nav-donate" href="donate.html">Donate</a>
+    </div>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </nav>
+</div><main class="volunteer-form-page">
+<section class="form-hero">
+  <div class="container form-hero-grid">
+    <div>
+      <span class="kicker">Volunteer with Hands &amp; Canvas</span>
+      <h1>Find your way to <span class="paint-highlight">create.</span></h1>
+      <p class="lede">Tell us a little about yourself and what you would enjoy helping with. The form adapts to your interests and should only take a few minutes.</p>
+    </div>
+    <aside class="welcome-note">
+      <div class="welcome-icon">✦</div>
+      <div><strong>New to art or volunteering? You’re welcome here.</strong><p>No previous art, leadership, or volunteer experience is required to participate in any Hands &amp; Canvas program.</p></div>
+    </aside>
+  </div>
+</section>
+
+<section class="form-section">
+<div class="container form-shell">
+  <div class="form-progress-wrap">
+    <div class="form-progress-head"><span id="stepCounter">Step 1 of 4</span><span id="stepTitle">About You</span></div>
+    <div class="form-progress-track"><div class="form-progress-fill" id="progressFill"></div></div>
+    <div class="progress-labels"><span class="active">About You</span><span>Get Involved</span><span>Your Fit</span><span>Finish</span></div>
+  </div>
+
+  <form id="hcVolunteerForm" action="https://script.google.com/macros/s/AKfycbzTq0wpEhLNtcgg_f4Tf8Iw9BxTFA3n7Lts7sgUrlPHqkn8BFn5jzdc09WkoMc12D8Q/exec" method="post" novalidate>
+    <section class="form-step active" data-step="1">
+      <div class="step-heading"><span class="step-chip teal-chip">01</span><div><h2>First, tell us a little about yourself.</h2><p>We’ll use this information to understand who is applying and how to contact you.</p></div></div>
+      <div class="field-grid two">
+        <label class="field"><span>First name <b>*</b></span><input type="text" name="firstName" required placeholder="First name"></label>
+        <label class="field"><span>Last name <b>*</b></span><input type="text" name="lastName" required placeholder="Last name"></label>
+        <label class="field"><span>Email address <b>*</b></span><input type="email" name="email" required placeholder="you@example.com"></label>
+        <label class="field"><span>Phone number <b>*</b></span><input type="tel" name="phone" required placeholder="(416) 555-0123"></label>
+        <label class="field"><span>Age <b>*</b></span><select name="age" required><option value="">Select one</option><option>13–15</option><option>16–17</option><option>18+</option><option>Prefer not to say</option></select></label>
+        <label class="field"><span>School / university / organization <b>*</b></span><input type="text" name="school" required placeholder="Enter N/A if not applicable"></label>
+        <label class="field"><span>City / general location <b>*</b></span><input type="text" name="city" required placeholder="Toronto, Ontario"></label>
+        <label class="field"><span>Instagram / portfolio / website</span><input type="text" name="portfolio" placeholder="Optional"></label>
+      </div>
+    </section>
+
+    <section class="form-step" data-step="2">
+      <div class="step-heading"><span class="step-chip pink-chip">02</span><div><h2>How would you like to help?</h2><p>Choose the option that feels closest to what you’re interested in right now. You don’t need to have everything figured out.</p></div></div>
+      <div class="path-choice-grid">
+        <label class="path-choice teal-card"><input type="radio" name="helpPath" value="beyond" required><span class="choice-check">✓</span><span class="choice-kicker">Create from anywhere</span><strong>Beyond the Studio</strong><span>Create artwork, activities, and creative resources for children beyond our physical workshop locations.</span></label>
+        <label class="path-choice pink-card"><input type="radio" name="helpPath" value="workshops"><span class="choice-check">✓</span><span class="choice-kicker">Create in person</span><strong>Workshops</strong><span>Help support free, hands-on art programming with children and youth.</span></label>
+        <label class="path-choice purple-card"><input type="radio" name="helpPath" value="team"><span class="choice-check">✓</span><span class="choice-kicker">Build with us</span><strong>Join the H&amp;C Team</strong><span>Help with programming, outreach, design, partnerships, communications, and organization.</span></label>
+        <label class="path-choice yellow-card"><input type="radio" name="helpPath" value="multiple"><span class="choice-check">✓</span><span class="choice-kicker">Mix &amp; match</span><strong>More Than One</strong><span>I’m interested in contributing across more than one area.</span></label>
+        <label class="path-choice blue-card wide-choice"><input type="radio" name="helpPath" value="unsure"><span class="choice-check">✓</span><span class="choice-kicker">Still exploring</span><strong>I’m Not Sure Yet</strong><span>I want to help, but I’d like help figuring out where I may fit best.</span></label>
+      </div>
+    </section>
+
+    <section class="form-step" data-step="3">
+      <div class="step-heading"><span class="step-chip purple-chip">03</span><div><h2 id="dynamicHeading">Tell us what interests you.</h2><p id="dynamicSubheading">This page changes based on how you’d like to help.</p></div></div>
+      <div id="dynamicStepContent"></div>
+    </section>
+
+    <section class="form-step" data-step="4">
+      <div class="step-heading"><span class="step-chip yellow-chip">04</span><div><h2>Finish &amp; submit.</h2><p>You’re on the final step. Add your availability, check your details, then press <strong>Submit Volunteer Form</strong> at the bottom.</p></div></div><div class="final-step-banner"><strong>Last step.</strong><span>There is no extra page after this one — when you are ready, press Submit Volunteer Form.</span></div>
+      <div class="question-block"><h3>How often would you ideally like to help? <b>*</b></h3><div class="pill-options single">
+        <label><input type="radio" name="frequency" value="Occasionally" required><span>Occasionally</span></label><label><input type="radio" name="frequency" value="A few times per month"><span>A few times per month</span></label><label><input type="radio" name="frequency" value="Weekly"><span>Weekly</span></label><label><input type="radio" name="frequency" value="Specific projects/events"><span>Specific projects / events</span></label><label><input type="radio" name="frequency" value="Flexible"><span>Flexible</span></label><label><input type="radio" name="frequency" value="Not sure"><span>Not sure yet</span></label>
+      </div></div>
+      <div class="question-block"><h3>When are you generally available?</h3><div class="check-grid">
+        <label class="check-card"><input type="checkbox" name="availability" value="Weekday mornings"><span>Weekday mornings</span></label><label class="check-card"><input type="checkbox" name="availability" value="Weekday afternoons"><span>Weekday afternoons</span></label><label class="check-card"><input type="checkbox" name="availability" value="Weekday evenings"><span>Weekday evenings</span></label><label class="check-card"><input type="checkbox" name="availability" value="Saturdays"><span>Saturdays</span></label><label class="check-card"><input type="checkbox" name="availability" value="Sundays"><span>Sundays</span></label><label class="check-card"><input type="checkbox" name="availability" value="School breaks / holidays"><span>School breaks / holidays</span></label><label class="check-card"><input type="checkbox" name="availability" value="Schedule varies"><span>My schedule varies</span></label>
+      </div></div>
+      <div class="question-block workshop-only-final" hidden><h3>Are you generally able to travel to programs in Toronto?</h3><div class="pill-options single"><label><input type="radio" name="travel" value="Yes"><span>Yes</span></label><label><input type="radio" name="travel" value="Usually"><span>Usually</span></label><label><input type="radio" name="travel" value="Depends on location"><span>Depends on location</span></label><label><input type="radio" name="travel" value="Remote only"><span>Remote only</span></label></div></div>
+      <label class="field full"><span>Anything else you’d like us to know?</span><textarea name="anythingElse" maxlength="300" data-count-target="anythingElseCount" placeholder="Optional — 300 characters max"></textarea><small class="char-count"><span id="anythingElseCount">0</span>/300</small></label>
+      <label class="confirm-row"><input type="checkbox" name="accuracy" required><span>I confirm that the information I’ve provided is accurate. <b>*</b></span></label>
+      <div class="submit-reminder"><strong>Ready to send?</strong><p>Your response will be sent to the Hands &amp; Canvas team when you press <b>Submit Volunteer Form →</b>.</p></div>
+    </section>
+
+    <div class="form-errors" id="formErrors" role="alert"></div>
+    <div class="form-nav"><button class="btn btn-quiet" type="button" id="backBtn" hidden>← Back</button><div class="form-nav-spacer"></div><button class="btn btn-teal" type="button" id="nextBtn">Continue →</button><button class="btn btn-pink" type="submit" id="submitBtn" hidden>Submit Volunteer Form →</button></div>
+  </form>
+
+  <section class="success-screen" id="successScreen" hidden>
+    <span class="kicker">Response sent</span><h2>Thanks for wanting to create with us.</h2><p>Your volunteer form has been sent to Hands &amp; Canvas. We now have your response and can follow up using the contact information you provided.</p><div class="btn-row"><button class="btn btn-teal" type="button" id="restartForm">Submit Another Response</button><a class="btn btn-quiet" href="volunteer.html">Back to Volunteer Page</a></div>
+  </section>
+</div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><a class="brand" href="index.html"><img class="brand-logo" src="assets/hc-logo.png" alt=""><span>Hands &amp; Canvas</span></a><p class="small mt-16">Free art. Shared creativity. Growing community.</p></div>
+    <div class="footer-links"><a href="about.html">About</a><a href="impact.html">Impact</a><a href="workshops.html">Workshops</a><a href="volunteer.html">Volunteer</a><a href="partner.html">Partner</a><a href="donate.html">Donate</a></div>
+    <div class="small"><a href="mailto:handsandcanvascontact@gmail.com">handsandcanvascontact@gmail.com</a><br>© 2026 Hands &amp; Canvas</div>
+  </div>
+</footer>
+<script src="script.js"></script><script src="volunteer-form.js"></script>
+</body>
+</html>
